@@ -1,0 +1,35 @@
+.input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchButton {
+  cursor: pointer;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding: 0; */
+  /* margin: 0; */
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+}
+
+hover:searchButton {
+  background-color: aqua !important;
+  color: red !important;
+}

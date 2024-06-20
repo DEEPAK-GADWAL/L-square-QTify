@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  height: 270px;
+  background-color: #121212;
+}
+
+.headphoneImg {
+  height: 175px;
+}
+
+.heroHeading {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.heroHeading h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
