@@ -28,7 +28,7 @@ const SearchBar = () => {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       type="search"
-      placeholder="Search an song of your choice"
+      placeholder="search"
     className={styles.input}
     />
 </div>
