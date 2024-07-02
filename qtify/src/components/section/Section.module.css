@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.toggleText {
+  cursor: pointer;
+  color: #34c94b;
+  margin-right: 15px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.carousel {
+  /* Styles for carousel layout */
+}
+
+.expandedView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}

@@ -29,7 +29,6 @@
   border: none;
 }
 
-hover:searchButton {
-  background-color: aqua !important;
-  color: red !important;
+.searchButton:hover {
+  background-color: rgba(224, 216, 216, 0.973);
 }

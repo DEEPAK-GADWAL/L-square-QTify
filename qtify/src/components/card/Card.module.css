@@ -1,0 +1,204 @@
+.card {
+  width: 200px;
+  background: white;
+  /* Semi-transparent background */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for depth */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  /* Light border to enhance glass effect */
+  overflow: hidden;
+  /* Ensure no overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.card:hover {
+  background: rgba(228, 220, 220, 0.781);
+  /* Slightly more opaque on hover */
+}
+
+.cardImg {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 4px 4px 0 0;
+  /* Rounded corners on top */
+  overflow: hidden;
+  margin: 0;
+  /* Remove margin */
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardInfo {
+  margin: 8px 0;
+  /* Add margin to the top and bottom of the info section */
+  padding: 0 5px;
+  /* Padding on the sides for spacing */
+  display: table;
+
+}
+
+.cardFollowers {
+
+  background-color: black;
+  /* Semi-transparent */
+  backdrop-filter: blur(5px);
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(5px);
+  /* Safari support */
+  border-radius: 16px;
+  color: white;
+  padding: 4px 8px;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Light border to enhance glass effect */
+  display: table;
+}
+
+.cardTitle {
+  font-weight: bold;
+  font-size: 1em;
+  /* Responsive font size */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 16px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .cardFollowers {
+    font-size: 0.8em;
+    /* Smaller font size on small screens */
+    padding: 3px 6px;
+    /* Adjust padding on small screens */
+  }
+
+  .cardTitle {
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      max-width: 100%;
+    }
+
+    .cardFollowers {
+      font-size: 0.8em;
+      padding: 3px 6px;
+    }
+
+    .cardTitleBelow {
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* .topHead {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 0 20px;
+
+ } */
+
+/* .showAll {
+  color: #34c94b;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.showAll:hover {
+  color: #34c94ab4;
+  transform: translateY(-2px);
+}
+
+.albumType {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.cardWrapper {
+  padding: 20px;
+}
+
+.cardRow {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .card {
+  width: 185px;
+  200px - 15px
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+} */
+
+/* .cardImg {
+  width: 100%;
+  height: 80%;
+} */
+
+/* .cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .cardInfo {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .cardFollowers {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+} */
+
+/* .cardTitle {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+} */

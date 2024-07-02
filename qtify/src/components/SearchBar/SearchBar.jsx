@@ -12,8 +12,15 @@ const SearchBar = () => {
     inputRef.current.blur();
   };
 
+  const handleSearchBtn=(e)=>{
+    e.preventDefault()
+    const val =inputRef.current.value
+    
+    console.log(`search value ${val}`)
+  }
   return (
   <form className={styles.wrapper}>
+
 
 <div>
     <input
@@ -27,7 +34,7 @@ const SearchBar = () => {
 </div>
 <div>
   <button className={styles.searchButton} type="submit">
-   <SearchIcon className="searchBtn"/>
+   <SearchIcon onClick={handleSearchBtn} className="searchBtn"/>
   </button>
 </div>
   </form>
