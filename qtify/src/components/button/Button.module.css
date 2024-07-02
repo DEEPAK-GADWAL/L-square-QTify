@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .button {
   background-color: #121212;
   color: #34c94b;
   border-radius: 12px;
   padding: 10px 16px;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
