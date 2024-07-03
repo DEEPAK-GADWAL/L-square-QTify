@@ -1,43 +1,32 @@
-import React, { useRef } from "react";
-import styles from "../SearchBar/SearchBar.module.css"
+import React, { useState } from "react";
+import styles from "../SearchBar/SearchBar.module.css";
 import SearchIcon from '@mui/icons-material/Search';
+
 const SearchBar = () => {
-  const inputRef = useRef(null);
+  const [searchValue, setSearchValue] = useState('');
 
-  const handleMouseOver = () => {
-    inputRef.current.focus();
+  const handleSearchBtn = (e) => {
+    e.preventDefault();
+    console.log(`search value ${searchValue}`);
   };
 
-  const handleMouseOut = () => {
-    inputRef.current.blur();
-  };
-
-  const handleSearchBtn=(e)=>{
-    e.preventDefault()
-    const val =inputRef.current.value
-    
-    console.log(`search value ${val}`)
-  }
   return (
-  <form className={styles.wrapper}>
-
-
-<div>
-    <input
-      ref={inputRef}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-      type="search"
-      placeholder="search"
-    className={styles.input}
-    />
-</div>
-<div>
-  <button className={styles.searchButton} type="submit">
-   <SearchIcon onClick={handleSearchBtn} className="searchBtn"/>
-  </button>
-</div>
-  </form>
+    <form className={styles.wrapper}>
+      <div>
+        <input
+          type="search"
+          placeholder="search"
+          className={styles.input}
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
+      </div>
+      <div>
+        <button className={styles.searchButton} type="submit" onClick={handleSearchBtn}>
+          <SearchIcon className="searchBtn" />
+        </button>
+      </div>
+    </form>
   );
 };
 
