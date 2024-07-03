@@ -15,7 +15,7 @@ const SearchBar = () => {
       <div>
         <input
           type="search"
-          placeholder="search"
+          placeholder="search a song"
           className={styles.input}
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
